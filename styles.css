@@ -18,13 +18,15 @@ section {
   margin-bottom: 2em;
 }
 
-pre {
+pre,
+.numbered-code {
   white-space: pre-wrap;
   background-color: #1e1e1e;
   color: white;
 }
 
-img {
+img,
+.gotcha {
   border: 2px solid rgba(204, 204, 204, 0.5);
   box-shadow: 0px 0px 5px 2px rgba(204, 204, 204, 0.5);
 }
@@ -33,4 +35,15 @@ img {
   margin-top: 3em;
   margin-bottom: 3em;
   line-height: 2.5em;
+}
+
+.gotcha {
+  border: 2px solid rgba(204, 204, 204, 0.5);
+  box-shadow: 0px 0px 5px 2px rgba(204, 0, 0, 0.5);
+  padding: 20px;
+  margin: 20px;
+}
+
+.numbered-code {
+  display: flex;
 }

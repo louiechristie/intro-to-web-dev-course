@@ -8,30 +8,29 @@
     <h1>Hello World of HTML</h1>
 
     <section>
-      <h2>Tools</h2>
+      <h2 id="tools">Tools</h2>
 
       <p class="tool">
         Download
         <a href="https://code.visualstudio.com/download"
           >Microsoft Visual Studio Code</a
-        > <br> <a href="https://code.visualstudio.com/download"> 
-        https://code.visualstudio.com/download</a
-      >
+        >
+        <br />
+        <a href="https://code.visualstudio.com/download">
+          https://code.visualstudio.com/download</a
+        >
       </p>
 
       <p class="tool">
-          Create an account on
-        <a href="https://code.visualstudio.com/download"
-          >Microsoft GitHub</a
-        >  <br> 
-        <a href="https://code.visualstudio.com/download"
-          >https://github.com/</a
-        >
+        Create an account on
+        <a href="https://code.visualstudio.com/download">Microsoft GitHub</a>
+        <br />
+        <a href="https://code.visualstudio.com/download">https://github.com/</a>
       </p>
     </section>
 
     <section>
-      <h2>Getting Started with GitHub</h2>
+      <h2 id="github">Getting Started with GitHub</h2>
 
       <p>Once you are signed in to Github</p>
 
@@ -68,8 +67,10 @@
 
       <p>
         Note: We will use the filename "index.html" for most of our web pages.
-        "Index" means it is the main webpage in the folder. .html means it is a
-        HTML file.
+        "index" means it is the main webpage in the folder. .html means it is a
+        HTML file. We use all lowercase letters, so it is <b>i</b>ndex.html (not
+        <b>I</b>ndex.html). Coding is case-sensitive, so we mostly use
+        lowercase.
       </p>
 
       <p>
@@ -130,6 +131,42 @@
         alt="Your page is published at link"
       />
 
+      <div class="gotcha">
+        <h3>Not working?</h3>
+
+        <p>
+          If the link is not showing, check the name of your repository. Does
+          the first part match your username exactly? Coding is very specific,
+          even one letter wrong and it won't work. Scroll to the top of this
+          settings page and rename your repository to
+          <code>username.github.io</code> where <code>username</code> is your
+          exact username (not the word 'username', not the example username
+          'louiechristietest').
+        </p>
+
+        <img src="../images/rename-repository.png" alt="Rename repository" />
+
+        <p>
+          You will also have to select your GitHub pages source as
+          <code>master branch</code>
+        </p>
+
+        <img
+          src="../images/github-pages-source.png"
+          alt="select GitHub pages source"
+        />
+
+        <p>
+          It should now say "Your site is published at
+          https://username.github.io/"
+        </p>
+
+        <img
+          src="../images/your-page-is-published.png"
+          alt="Your page is published at link"
+        />
+      </div>
+
       <p>Click on the link to https://username.github.io</p>
 
       <p>You should now see in your browser a page that says Hello World</p>
@@ -159,7 +196,7 @@
     </section>
 
     <section>
-      <h2>Getting Stared with Visual Studio Code</h2>
+      <h2 id="vscode">Getting Stared with Visual Studio Code</h2>
 
       <p>
         Create a new folder called username.github.io in your My Documents
@@ -169,7 +206,6 @@
       <p>Open Visual Studio Code</p>
 
       <p>Click on Menu -> File -> New File</p>
-
 
       <p>
         Copy this code (shortcut hold these keys together ctr-c on Windows, or
@@ -200,11 +236,11 @@
         username.github.io)
       </p>
 
-      <p>
-        In Save As box type the filename as <code>index.html</code>. It is customary to call most web pages <code>index.html</code>.
-      </p>
-      
+      <p>In Save As box type the filename as <code>index.html</code></p>
 
+      <p>
+        (Note: It is customary to call most web pages <code>index.html</code>)
+      </p>
 
       <img src="../images/save-as.png" alt="Save as" />
 
@@ -215,7 +251,6 @@
       <p>Click on the Explorer icon in the top left corner of the screen.</p>
 
       <img src="../images/explorer-icon.png" alt="Explorer icon" />
-
 
       <p>
         Right-click on index.html and select 'Reveal in Explorer' (or 'Reveal in
@@ -235,10 +270,22 @@
       <p>Go back to Visual Studio Code</p>
 
       <p>
-        Edit the line of code on line number 7. Leave the rest of the code the same.
+        Edit the line of code on line number 7 to be <code>&lt;p&gt;Hello World! Hello World!&lt;/p&gt;</code>. Leave the rest of the code the
+        same.
       </p>
 
-      <pre>
+      <div class="numbered-code">
+        <pre>
+          <code>
+            
+            6  
+            7  
+            8  
+
+          </code>
+        </pre>
+        
+        <pre>
           <code>
             ...
               &lt;body&gt;
@@ -247,6 +294,7 @@
             ...
           </code>
       </pre>
+      </div>
 
       <p>
         Click on File -> Save, or press or ctrl-s (Windows), cmd-s (Mac).
@@ -274,11 +322,13 @@
       </p>
 
       <p><a href="./..">Back to contents</a></p>
-
     </section>
 
     <footer>
-        <sub>Made by <a href="https://www.louiechristie.com"> Louie Christie</a></sub>
+      <sub
+        >Made by
+        <a href="https://www.louiechristie.com"> Louie Christie</a></sub
+      >
     </footer>
   </body>
 </html>
