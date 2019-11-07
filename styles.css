@@ -3,19 +3,46 @@
 }
 
 html {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 0;
 }
 
 body {
-  max-width: 640px;
   font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main,
+nav,
+pre,
+footer {
+  padding: 16px;
+}
+
+nav a {
+  color: black;
+}
+
+@media all (min-width: 640px) {
+  main,
+  nav,
+  footer {
+    padding: 40px;
+  }
+}
+
+nav,
+footer {
+  background-color: #fafbfc;
 }
 
 section {
   margin-top: 5em;
   margin-bottom: 2em;
+}
+
+p {
+  max-width: 640px;
 }
 
 pre,
@@ -25,8 +52,7 @@ pre,
   color: white;
 }
 
-img,
-.gotcha {
+img {
   border: 2px solid rgba(204, 204, 204, 0.5);
   box-shadow: 0px 0px 5px 2px rgba(204, 204, 204, 0.5);
 }
@@ -37,13 +63,25 @@ img,
   line-height: 2.5em;
 }
 
-.gotcha {
+.tip {
   border: 2px solid rgba(204, 204, 204, 0.5);
+  box-shadow: 0px 0px 5px 2px rgba(204, 204, 204, 0.5);
+  padding: 16px;
+  margin: 16px;
+}
+
+.gotcha {
+  border: 2px solid rgba(204, 0, 0, 0.5);
   box-shadow: 0px 0px 5px 2px rgba(204, 0, 0, 0.5);
-  padding: 20px;
-  margin: 20px;
+  padding: 16px;
+  margin: 16px;
 }
 
 .numbered-code {
-  display: flex;
+  display: inline-flex;
+  align-items: flex-start;
+}
+
+.line-numbers {
+  color: darkgrey;
 }
