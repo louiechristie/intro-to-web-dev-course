@@ -12,15 +12,48 @@
     <main>
       <h1>Hello World of HTML</h1>
 
+      <aside class="table-of-contents">
+        <h2>Contents</h2>
+        <ul>
+          <li><a href="#tools">Prerequisite Tools</a></li>
+          <li><a href="#github">Getting Started with GitHub</a></li>
+          <li><a href="#vscode">Getting Started with Visual Studio Code</a></li>
+        </ul>
+      </aside>
+
       <section>
         <h2 id="tools">Prerequisite Tools</h2>
 
+        <div class="tool" role="none">
+          <p>
+            Get a computer:
+          </p>
+
+          <ul>
+            <li>
+              Windows, Mac, or Linux operating system (not iPad, not Android.)
+            </li>
+            <li>
+              Less than five years old (within the requirements for running
+              <a href="https://support.google.com/chrome/a/answer/7100626"
+                >Chrome</a
+              >, and
+              <a
+                href="https://code.visualstudio.com/docs/supporting/requirements"
+                >Visual Studio Code)</a
+              >
+            </li>
+            <li>
+              Laptop (not desktop, so you only need to install and configure
+              software once for coding at work, home, school, and cafes.)
+            </li>
+          </ul>
+        </div>
+
         <p class="tool">
-          Get a computer with Windows, Mac, or Linux operating system (not iPad or Android.)
-          <br />
-          Generally, computers need to be less than five years old
-          <a href="https://support.google.com/chrome/a/answer/7100626"
-            >to run latest software.</a
+          Download Google Chrome
+          <br /><a href="https://www.google.com/chrome/"
+            >https://www.google.com/chrome/</a
           >
         </p>
 
@@ -44,6 +77,20 @@
             >https://github.com/</a
           >
         </p>
+
+        <aside class="gotcha">
+          <h3>Not working?</h3>
+
+          <p>
+            What browser are you using? Use Chrome browser. Even if you are
+            using a Mac.
+          </p>
+
+          <p>
+            On a Mac clicking on the email verify link may have opened Safari
+            without you noticing. Use Chrome browser instead.
+          </p>
+        </aside>
       </section>
 
       <section>
@@ -91,9 +138,9 @@
         <p>
           Note: We will use the filename "index.html" for most of our web pages.
           "index" means it is the main webpage in the folder. .html means it is
-          a HTML file. We use all lowercase letters, so it is <b>i</b>ndex.html
-          (not <b>I</b>ndex.html). Coding is case-sensitive, so we mostly use
-          lowercase.
+          a HTML file. We use all lowercase letters, so it is
+          <strong>i</strong>ndex.html (not <strong>I</strong>ndex.html). Coding
+          is case-sensitive, so we mostly use lowercase.
         </p>
 
         <p>
@@ -157,7 +204,7 @@
           alt="Your page is published at link"
         />
 
-        <div class="gotcha">
+        <aside class="gotcha">
           <h3>Not working? Gotcha.</h3>
 
           <p>
@@ -200,7 +247,7 @@
             src="../images/your-page-is-published.png"
             alt="Your page is published at link"
           />
-        </div>
+        </aside>
 
         <p>Click on the link to https://username.github.io</p>
 
@@ -247,7 +294,7 @@
         <img src="../images/menu-new-file.png" alt="Menu, new file" />
 
         <p>
-          Type this code into Visual Studio Code:
+          Copy and paste this code into Visual Studio Code:
         </p>
 
         <pre><code>&lt;!DOCTYPE html&gt;
@@ -260,7 +307,7 @@
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 
-        <div class="tip">
+        <aside class="tip">
           <p>
             Tip: If you don't know how to copy and paste,
             <a
@@ -268,9 +315,9 @@
               >instructions on how to copy and paste are here</a
             >.
           </p>
-        </div>
+        </aside>
 
-        <div class="tip">
+        <aside class="tip">
           <p>
             Tip: Keyboard shortcut for copy is to hold these keys together ctr-c
             on Windows, or cmd-c on Mac.
@@ -279,7 +326,7 @@
             Tip: Keyboard shortcut for paste is ctr-v on Windows or cmd-v on
             Mac.
           </p>
-        </div>
+        </aside>
 
         <p>Click on Menu -> File -> Save As...</p>
 
@@ -330,7 +377,7 @@
           rest of the code the same.
         </p>
 
-        <div class="numbered-code">
+        <table class="numbered-code">
           <pre><code class="line-numbers">
 6  
 7  
@@ -343,7 +390,7 @@
     &lt;p&gt;Hello World! Hello World!&lt;/p&gt;
   &lt;/body&gt;
 ...</code></pre>
-        </div>
+        </table>
 
         <p>
           Click on File -> Save, or press or ctrl-s (Windows), cmd-s (Mac).
@@ -370,7 +417,7 @@
           You now know how to create and edit web pages in Visual Studio Code.
         </p>
 
-        <p><a href="./.."><-- Back to tutorials</a></p>
+        <p><a href="./..">⬅ Back to tutorials</a></p>
       </section>
     </main>
 
