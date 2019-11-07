@@ -111,5 +111,6 @@ aside {
 }
 
 .line-numbers {
+  flex: 0 1 40px;
   color: darkgrey;
 }
