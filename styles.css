@@ -114,3 +114,14 @@ aside {
   flex: 0 1 40px;
   color: darkgrey;
 }
+
+.published-message {
+  color: #165c26;
+  background-color: #dcffe4;
+  border-color: rgba(27, 31, 35, 0.15);
+}
+
+.ready-to-be-published-message {
+  background-color: #dbedff;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+}
